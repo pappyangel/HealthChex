@@ -1,0 +1,43 @@
+{	
+	"name": "MSFTJim .Net 8 Codespace Defaults", 
+	
+	"image": "mcr.microsoft.com/devcontainers/dotnet:8.0-jammy",	
+	
+	// "forwardPorts": [5100, 5200], 
+
+	"features":
+		{
+	    		"ghcr.io/devcontainers/features/azure-cli:1": {"version": "latest"}, 
+	    		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
+	    	},	  		
+	
+	"customizations":
+		{
+			"vscode":
+				{
+					"extensions": 
+						[		
+							"ms-dotnettools.csharp",
+							"ms-dotnettools.csdevkit",
+							"dotnettools.vscodeintellicode-csharp",
+							"ms-dotnettools.vscode-dotnet-runtime",
+							"ms-vscode.js-debug-companion",
+							"adrianwilczynski.user-secrets",
+							"github.copilot",
+							"github.copilot-chat",
+							"mhutchie.git-graph",
+							"ms-dotnettools.dotnet-interactive-vscode",
+							"wraith13.zoombar-vscode",
+							"ms-vscode.azurecli"							
+						]
+				}
+		},
+
+	//current default CS has everything needed so no extra items to install at this time 1-6-21 
+	//    "dockerFile": "Dockerfile",
+
+	//"postCreateCommand": "/bin/bash ./.devcontainer/post-create.sh > ~/post-create.log",
+	"postCreateCommand": "sudo bash ./.devcontainer/post-create.sh",
+
+	"containerEnv": { "DOGVAR": "Cosmo" }
+}
