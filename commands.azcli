@@ -2,3 +2,8 @@
 dotnet new webapi 
 dotnet new sln -n HealthChex-sln
 dotnet sln HealthChex-sln.sln add ./HealthChex/HealthChex.csproj 
+
+dotnet add package AspNetCore.HealthChecks.UI
+dotnet add package AspNetCore.HealthChecks.UI.Client
+
+dotnet add package AspNetCore.HealthChecks.UI.InMemory.Storage
