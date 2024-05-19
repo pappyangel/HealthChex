@@ -7,3 +7,8 @@ dotnet add package AspNetCore.HealthChecks.UI
 dotnet add package AspNetCore.HealthChecks.UI.Client
 
 dotnet add package AspNetCore.HealthChecks.UI.InMemory.Storage
+
+# HealthChech with no UI
+dotnet new webapi 
+dotnet new sln -n HCnoUI
+dotnet sln HCnoUI.sln add ./HCnoUI/HCnoUI.csproj 
